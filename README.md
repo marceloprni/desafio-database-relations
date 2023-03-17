@@ -44,6 +44,7 @@ Dica 3: A sua requisição do insomnia deve enviar um JSON com o formato parecid
     }
   ]
 }
+
 Dica 4: Uma chamada a essa rota deve retornar os dados do cliente, produtos do pedido e id do pedido, num formato parecido com o seguinte:
 
 {
@@ -78,6 +79,9 @@ Dica 4: Uma chamada a essa rota deve retornar os dados do cliente, produtos do p
     }
   ]
 }
+
+
+
 GET /orders/:id: Essa rota deve retornar as informações de um pedido específico, com todas as informações que podem ser recuperadas através dos relacionamentos entre a tabela orders, customers e orders_products.
 Dica: Aqui você pode utilizar a opção eager do TypeORM ou passar a opção relations para o método findOne do TypeORM, informando os nomes das tabelas que você deseja buscar o relacionamento.
 
